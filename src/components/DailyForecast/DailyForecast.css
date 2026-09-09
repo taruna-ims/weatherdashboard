@@ -1,0 +1,178 @@
+
+   /* 7-DAY FORECAST */
+ 
+.daily-section {
+  margin: 90 auto 60px !important;
+  position: relative;
+}
+
+/* Heading */
+.daily-section .section-title {
+  padding-top: 0 100px;
+ margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+/* Forecast box */
+.daily-list {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 8px 25px;
+  box-sizing: border-box;
+}
+
+
+
+
+   /* FORECAST ROW */
+  
+
+.daily-row {
+  display: grid;
+  grid-template-columns:
+    90px
+    minmax(300px, 1fr)
+    90px
+    120px;
+  align-items: center;
+  gap: 15px;
+  padding: 16px 0;
+  min-height: 68px;
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.14);
+}
+
+.daily-row:last-child {
+  border-bottom: none;
+}
+
+/* Day */
+.daily-day {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+/* Condition */
+.daily-condition {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.daily-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.daily-label {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+/* Rain */
+.daily-rain {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Temperature */
+.daily-temps {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.daily-min {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+
+   /* HOVER */
+  
+
+.daily-row {
+  transition: background 0.2s ease;
+}
+
+.daily-row:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+
+
+
+   /* TABLET */
+
+
+@media (max-width: 800px) {
+  .daily-section {
+    margin: 20px auto 50px;
+  }
+
+  .daily-list {
+    max-width: 95%;
+  }
+
+  .daily-row {
+    grid-template-columns:
+      70px
+      1fr
+      70px
+      100px;
+    gap: 10px;
+  }
+}
+
+
+
+
+
+   /* MOBILE */
+   
+
+@media (max-width: 560px) {
+  .daily-section {
+    margin: 20px auto 45px;
+  }
+
+  .daily-list {
+    max-width: 100%;
+    padding: 8px 15px;
+  }
+
+  .daily-row {
+    grid-template-columns:
+      55px
+      1fr
+      75px;
+    gap: 8px;
+    padding: 14px 0;
+  }
+
+  .daily-rain {
+    display: none;
+  }
+
+  .daily-label {
+    font-size: 0.78rem;
+  }
+
+  .daily-icon {
+    font-size: 1.2rem;
+  }
+
+  .daily-temps {
+    font-size: 0.88rem;
+    gap: 7px;
+  }
+}

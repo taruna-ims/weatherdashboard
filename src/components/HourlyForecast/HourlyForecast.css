@@ -1,0 +1,50 @@
+.hourly-section {
+  margin: 40px auto;
+}
+
+.hourly-scroll {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scroll-snap-type: x proximity;
+}
+
+.hourly-card {
+  flex: 0 0 96px;
+  padding: 16px 10px;
+  text-align: center;
+  scroll-snap-align: start;
+  transition: transform 0.2s ease;
+}
+
+.hourly-card:hover {
+  transform: translateY(-4px);
+}
+
+.hourly-time {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.hourly-icon {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.hourly-temp {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.hourly-rain {
+  margin-top: 6px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}

@@ -1,0 +1,66 @@
+/* .container{
+  margin:100px;
+} */
+
+.vibe-section {
+  margin: 10px auto;
+}
+
+.vibe-card {
+  padding: 24px;
+  transition: transform 0.25s ease;
+}
+
+.vibe-card:hover {
+  transform: translateY(-3px);
+}
+
+.vibe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.vibe-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.vibe-icon {
+  background: rgba(255, 255, 255, 0.18);
+  padding: 9px;
+  border-radius: 12px;
+  display: flex;
+}
+
+.vibe-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 2px;
+}
+
+.vibe-value {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.vibe-message {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--glass-border);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 640px) {
+  .vibe-grid {
+    grid-template-columns: 1fr;
+  }
+}

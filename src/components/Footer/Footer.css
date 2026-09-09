@@ -1,0 +1,35 @@
+.site-footer {
+  margin-top: 60px;
+  padding: 32px 0 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  text-align: center;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.footer-tagline {
+  margin-top: 6px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.footer-meta {
+  margin-top: 10px;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+}
+
+.footer-case-study {
+  margin-top: 4px;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-style: italic;
+}
